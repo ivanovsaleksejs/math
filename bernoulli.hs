@@ -1,6 +1,6 @@
 {-# LANGUAGE PostfixOperators  #-}
 
--- Bernulli formula efficiently calculates the probability
+-- Bernoulli formula efficiently calculates the probability
 -- of k successful outcomes in n equal trials with possible results "true" of "false",
 -- 
 --
@@ -14,9 +14,9 @@ module Main where
 
 c a b = (b !) / ((a !) * ((b - a) !))
 
-bernulli success (good, all) trials = c success trials * (p ** success) * (q ** (trials - success))
+bernoulli success (good, all) trials = c success trials * (p ** success) * (q ** (trials - success))
     where
         p = good / all
         q = 1 - p
 
-main = print $ bernulli 2 (20,30) 4
+main = print $ bernoulli 2 (20,30) 4
