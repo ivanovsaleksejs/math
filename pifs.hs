@@ -23,7 +23,7 @@ module Main where
 
 type Pentaple t = (t,t,t,t,t)
 
--- Function that generates decimal digits of pi using Gorper's series.
+-- Function that generates decimal digits of pi using Gosper's series.
 -- Function can restore generation from specific offset
 -- if 5 parameters are provided
 step :: Integral t => Pentaple t -> Pentaple t
